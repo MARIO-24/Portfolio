@@ -1,4 +1,3 @@
-// Toggle menú principal en móviles
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -6,7 +5,6 @@ menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Scroll suave para botones
 const navButtons = document.querySelectorAll('.nav-btn');
 
 navButtons.forEach(button => {
@@ -22,14 +20,12 @@ navButtons.forEach(button => {
     });
 });
 
-// Menú de redes sociales
 function toggleSocial() {
     const socialMenu = document.getElementById('social-menu');
     socialMenu.style.display =
         socialMenu.style.display === 'block' ? 'none' : 'block';
 }
 
-// Cerrar menús al hacer clic fuera
 document.addEventListener('click', (e) => {
     const socialBtn = document.querySelector('.social-btn');
     const socialMenu = document.getElementById('social-menu');
@@ -43,9 +39,9 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// ----------------------
-// CARRUSEL HERRAMIENTAS
-// ----------------------
+// ---------
+// CARRUSEL
+// ---------
 (function () {
   'use strict';
 
@@ -80,9 +76,7 @@ document.addEventListener('click', (e) => {
   });
 })();
 
-// ----------------------
-// CARRUSEL LENGUAJES
-// ----------------------
+
 (function () {
   'use strict';
 
