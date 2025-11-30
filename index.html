@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mario Sánchez Rufino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <header>
+    <div class="header-left">
+        <img src="imagenes/rufito.png" alt="Foto Mario" class="profile-pic">
+        <h1>RufitoDeveloper</h1>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <nav class="nav-main">
+        <div class="nav-links">
+            <button class="nav-btn" data-target="sobre-mi">Sobre Mi</button>
+            <button class="nav-btn" data-target="trabajos">Mis Trabajos</button>
+            <button class="nav-btn" data-target="habilidades">Habilidades</button>
+            <a href="cv/CV Mario Sánchez Rufino.pdf" class="btn" target="_blank">Ver CV</a>
+        </div>
+    </nav>
+
+    <nav>
+        <ul>
+            <li class="social-btn">
+    <button onclick="toggleSocial()">
+        <span class="redes-text">Redes</span> ▼
+    </button>
+    <div id="social-menu" class="social-menu">
+        <a href="https://www.instagram.com/rufitodeveloper/" target="_blank">Instagram</a>
+        <a href="https://x.com/RufitoDeveloper" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/in/mario-sanchez-rufino-6946a01aa/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/MARIO-24?tab=repositories" target="_blank">GitHub</a>
+    </div>
+</li>
+
+        </ul>
+    </nav>
+</header>
+
+    <section id="sobre-mi">
+        <div class="sobre-mi-container">
+           <div class="imagenes-superpuestas">
+                <img src="imagenes/icono.png" class="img-delante" alt="delante">
+            </div>
+            <div class="sobre-mi-text">
+                <h2 class="titulo-seccion">Sobre mí</h2>
+                <h3>Hola, me llamo Mario Sánchez Rufino...</h3>
+                <p>... y soy estudiante de Desarrollo de Aplicaciones Multiplataforma, especializado en frontend y diseño web. Apasionado por la creación de interfaces atractivas y funcionales, así como por el desarrollo de aplicaciones móviles en Android Studio. Busco crecer profesionalmente participando en proyectos innovadores y desafiantes que me permitan potenciar mis habilidades y aportar valor.</p>
+                <div class="botones-sobre-mi">
+                <a href="cv/CV Mario Sánchez Rufino.docx" class="btn">📄 Descargar CV</a>
+                <a href="https://github.com/MARIO-24" target="_blank" class="btn">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/mario-sanchez-rufino-6946a01aa/" target="_blank" class="btn">💼 LinkedIn</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="trabajos">
+    <h2>Mis Trabajos</h2>
+    <div class="trabajo-item">
+        <a href="https://github.com/MARIO-24/CamiloMeme-V9" target="_blank">
+            <img src="imagenes/proyectocamilo.png" alt="Camilo Meme">
+        </a>
+        <p><strong>Camilo Meme V9:</strong></p>
+        <p>Una aplicación web interactiva construida con React y Firebase, donde el usuario puede registrarse, iniciar sesión y cuidar a Camilo, una mascota virtual. Proyecto subido a GitHub y desarrollado con Vite y TailwindCSS.</p>
+    </div>
+</section>
+
+
+    <section id="habilidades">
+    <div class="habilidades-container">
+        <h2>Habilidades</h2>
+
+        <h3>Herramientas</h3>
+        <div class="carousel-container" id="herramientas-carousel">
+            <div class="carousel-track">
+                <div class="habilidad">
+                    <img src="imagenes/android.png" alt="Android Studio">
+                    <p>Android Studio</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/visual.png" alt="Visual Studio">
+                    <p>Visual Studio</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/intellij.png" alt="IntelliJ">
+                    <p>IntelliJ</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/eclipse.png" alt="Eclipse">
+                    <p>Eclipse</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/mysql.png" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Lenguajes de Programación</h3>
+        <div class="carousel-container" id="lenguajes-carousel">
+            <div class="carousel-track">
+                <div class="habilidad">
+                    <img src="imagenes/kotlin.png" alt="Kotlin">
+                    <p>Kotlin</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/javasc.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="habilidad">
+                    <img src="imagenes/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="animated-background">
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <div class="circle circle3"></div>
+  <div class="circle circle4"></div>
+</div>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
