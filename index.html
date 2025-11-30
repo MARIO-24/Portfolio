@@ -21,6 +21,7 @@
             <button class="nav-btn" data-target="sobre-mi">Sobre Mi</button>
             <button class="nav-btn" data-target="trabajos">Mis Trabajos</button>
             <button class="nav-btn" data-target="habilidades">Habilidades</button>
+            <button class="nav-btn" data-target="Contactame">Contáctame</button>
             <a href="cv/CV Mario Sánchez Rufino.pdf" class="btn" target="_blank">Ver CV</a>
         </div>
     </nav>
@@ -140,6 +141,28 @@
     </div>
 </section>
 
+<section id="contactame">
+    <h2>Contáctame</h2>
+    <form id="contact-form" class="contact-form">
+
+        <label>Nombre:</label>
+        <input type="text" id="nombre" placeholder="Francisco">
+
+        <label>Apellido(s):</label>
+        <input type="text" id="apellidos" placeholder="Sánchez">
+
+        <label>Gmail:</label>
+        <input type="email" id="gmail" placeholder="ejemplo@gmail.com">
+
+        <label>Mensaje:</label>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+
+        <p id="form-msg" class="form-msg"></p>
+    </form>
+</section>
+
 <div class="animated-background">
   <div class="circle circle1"></div>
   <div class="circle circle2"></div>
@@ -150,5 +173,10 @@
 
 
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    emailjs.init("6J6eAggXrCQdlS6NQ"); 
+</script>
+
 </body>
 </html>
